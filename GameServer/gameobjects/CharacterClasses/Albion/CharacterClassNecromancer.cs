@@ -188,7 +188,6 @@ namespace DOL.GS
 		/// <returns></returns>
 		public override bool RemoveFromWorld()
 		{
-			// Force caster form.
 
 			if (Player.IsShade)
 				Player.Shade(false);
