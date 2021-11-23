@@ -10382,7 +10382,7 @@ namespace DOL.GS
 		}
 
 		/// <summary>
-		/// Gets or sets the database guildid of this player
+		/// Gets or sets the database guild of this player
 		/// (delegate to DBCharacter)
 		/// </summary>
 		public string GuildID
@@ -14388,7 +14388,7 @@ namespace DOL.GS
 				// Aredhel: Bit fishy, necro in caster from could use
 				// Traitor's Dagger... FIXME!
 
-				if (CharacterClass.ID == (int)eCharacterClass.Necromancer)
+				if (CharacterClass.ID == (int)eCharacterClass.Necromancer || CharacterClass.ID == (int)eCharacterClass.Disciple) //Fix for the Disciple Shade Model:akinelo
 					return 822;
 				
 				switch (Race)
